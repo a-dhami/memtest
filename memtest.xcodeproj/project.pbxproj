@@ -15,6 +15,8 @@
 		F22EAF6C26A775AB00EF682C /* memtestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EAF6B26A775AB00EF682C /* memtestTests.m */; };
 		F22EAF7726A775AB00EF682C /* memtestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EAF7626A775AB00EF682C /* memtestUITests.m */; };
 		F22EAF8726A7DAD400EF682C /* drivedetect.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EAF8626A7DAD400EF682C /* drivedetect.m */; };
+		F2A6CE5F26A8A8F30028BF43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2A6CE5E26A8A8F30028BF43 /* .gitignore */; };
+		F2A6CE6126A8A9060028BF43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2A6CE6026A8A9060028BF43 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		F22EAF7826A775AB00EF682C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F22EAF8626A7DAD400EF682C /* drivedetect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drivedetect.m; sourceTree = "<group>"; };
 		F2A6CE5D26A7E1E70028BF43 /* drivedetect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drivedetect.h; sourceTree = "<group>"; };
+		F2A6CE5E26A8A8F30028BF43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F2A6CE6026A8A9060028BF43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			children = (
 				F22EAF6B26A775AB00EF682C /* memtestTests.m */,
 				F22EAF6D26A775AB00EF682C /* Info.plist */,
+				F2A6CE5E26A8A8F30028BF43 /* .gitignore */,
 			);
 			path = memtestTests;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			children = (
 				F22EAF7626A775AB00EF682C /* memtestUITests.m */,
 				F22EAF7826A775AB00EF682C /* Info.plist */,
+				F2A6CE6026A8A9060028BF43 /* .gitignore */,
 			);
 			path = memtestUITests;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A6CE5F26A8A8F30028BF43 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A6CE6126A8A9060028BF43 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
