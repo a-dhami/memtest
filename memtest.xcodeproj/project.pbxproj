@@ -14,6 +14,7 @@
 		F22EAF6126A775AB00EF682C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EAF6026A775AB00EF682C /* main.m */; };
 		F22EAF6C26A775AB00EF682C /* memtestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EAF6B26A775AB00EF682C /* memtestTests.m */; };
 		F22EAF7726A775AB00EF682C /* memtestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EAF7626A775AB00EF682C /* memtestUITests.m */; };
+		F22EAF8726A7DAD400EF682C /* drivedetect.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EAF8626A7DAD400EF682C /* drivedetect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		F22EAF7226A775AB00EF682C /* memtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22EAF7626A775AB00EF682C /* memtestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = memtestUITests.m; sourceTree = "<group>"; };
 		F22EAF7826A775AB00EF682C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22EAF8626A7DAD400EF682C /* drivedetect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drivedetect.m; sourceTree = "<group>"; };
+		F2A6CE5D26A7E1E70028BF43 /* drivedetect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drivedetect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				F22EAF5F26A775AB00EF682C /* Info.plist */,
 				F22EAF6026A775AB00EF682C /* main.m */,
 				F22EAF6226A775AB00EF682C /* memtest.entitlements */,
+				F22EAF8626A7DAD400EF682C /* drivedetect.m */,
+				F2A6CE5D26A7E1E70028BF43 /* drivedetect.h */,
 			);
 			path = memtest;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				F22EAF5926A775A900EF682C /* ViewController.m in Sources */,
 				F22EAF6126A775AB00EF682C /* main.m in Sources */,
 				F22EAF5626A775A900EF682C /* AppDelegate.m in Sources */,
+				F22EAF8726A7DAD400EF682C /* drivedetect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

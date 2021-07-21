@@ -8,6 +8,8 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize diskDropdown;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
