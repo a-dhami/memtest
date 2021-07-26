@@ -9,7 +9,11 @@
 
 @interface ViewController : NSViewController
 
-@property (weak) IBOutlet NSPopUpButton *diskDropdown;
+@property (weak) IBOutlet NSPopUpButtonCell *list;
+
+- (IBAction)testButton:(id)sender;
+- (IBAction)updateDropDown:(id)sender;
+- (IBAction)refresh:(id)sender;
 
 @end
 

@@ -22,7 +22,9 @@ int main(int argc, const char * argv[]) {
     //4.Read File and Analyze (Bit-by-bit or CRC32 or Hash Check?)
     //5.GUI
     
-    NSMutableArray *bob = drivedetect();    
+   
+    
+    
     
     
     //NSFileHandle *write;
