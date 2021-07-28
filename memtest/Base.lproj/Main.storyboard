@@ -90,9 +90,12 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="145"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="225"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="maxSize" type="size" width="480" height="145"/>
+                        <value key="minSize" type="size" width="480" height="225"/>
+                        <value key="maxSize" type="size" width="480" height="225"/>
+                        <value key="minFullScreenContentSize" type="size" width="480" height="225"/>
+                        <value key="maxFullScreenContentSize" type="size" width="480" height="225"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -110,11 +113,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="145"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="225"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4s3-u1-snm">
-                                <rect key="frame" x="18" y="19" width="173" height="16"/>
+                                <rect key="frame" x="18" y="99" width="173" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Flash Memory Tester" id="4cX-gc-Rfi">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -123,7 +126,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AD5-dC-Lt2">
-                                <rect key="frame" x="390" y="12" width="77" height="32"/>
+                                <rect key="frame" x="390" y="92" width="77" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="7U9-ZO-1cG"/>
                                 </constraints>
@@ -136,7 +139,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-7n-WaE">
-                                <rect key="frame" x="18" y="109" width="108" height="16"/>
+                                <rect key="frame" x="18" y="189" width="108" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Removable Disk: " id="2Sl-kD-pf4">
                                     <font key="font" metaFont="system"/>
@@ -145,7 +148,7 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton identifier="diskDropdown" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-4b-WtJ">
-                                <rect key="frame" x="232" y="101" width="232" height="25"/>
+                                <rect key="frame" x="232" y="181" width="232" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="ZMZ-Kq-GhJ">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -157,7 +160,7 @@
                                 </connections>
                             </popUpButton>
                             <button identifier="refreshButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lia-ty-z3l">
-                                <rect key="frame" x="386" y="56" width="81" height="32"/>
+                                <rect key="frame" x="386" y="136" width="81" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fgQ-ia-Qd2">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -179,7 +182,7 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="OIY-U1-Sib"/>
             </objects>
-            <point key="canvasLocation" x="75" y="591.5"/>
+            <point key="canvasLocation" x="75" y="631.5"/>
         </scene>
     </scenes>
 </document>
