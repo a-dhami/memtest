@@ -81,7 +81,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="-94" y="-28"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -90,7 +90,7 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="225"/>
+                        <rect key="contentRect" x="644" y="368" width="480" height="225"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="480" height="225"/>
                         <value key="maxSize" type="size" width="480" height="225"/>
@@ -125,19 +125,6 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AD5-dC-Lt2">
-                                <rect key="frame" x="390" y="92" width="77" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="63" id="7U9-ZO-1cG"/>
-                                </constraints>
-                                <buttonCell key="cell" type="push" title="Test" bezelStyle="rounded" alignment="center" borderStyle="border" identifier="btn_test" imageScaling="proportionallyDown" inset="2" id="e3Z-Rs-SXf">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="testButton:" target="XfG-lQ-9wD" id="Az0-6I-LQo"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-7n-WaE">
                                 <rect key="frame" x="18" y="189" width="108" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -149,7 +136,7 @@
                             </textField>
                             <popUpButton identifier="diskDropdown" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-4b-WtJ">
                                 <rect key="frame" x="232" y="181" width="232" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="ZMZ-Kq-GhJ">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
@@ -176,7 +163,6 @@
                         <outlet property="diskDropdown" destination="2Vz-4b-WtJ" id="9H8-6l-R9e"/>
                         <outlet property="list" destination="ZMZ-Kq-GhJ" id="aRI-RI-OAM"/>
                         <outlet property="popupSelection" destination="2Vz-4b-WtJ" id="vZs-6M-Lsq"/>
-                        <outlet property="testButton" destination="AD5-dC-Lt2" id="mpS-1s-wYK"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

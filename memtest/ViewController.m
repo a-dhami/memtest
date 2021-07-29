@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "instance.h"
 #import "drivedetect.h"
 
 
@@ -13,10 +14,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     // Do any additional setup after loading the view.
-    NSMutableArray *drives = drivedetect();
-    for (NSURL *url in drives){
+    Instance *sharedInstance = [Instance sharedInstance];
+    for (NSURL *url in sharedInstance.volumes){
         NSString *volumeName;
         NSError *error;
         [url getResourceValue:&volumeName forKey:NSURLVolumeNameKey error:&error];
@@ -27,7 +28,9 @@
     if(numOfDrives == 0){
         [_list addItemWithTitle:@"No Removable Disks Detected"];
     }
+    
 }
+
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
@@ -41,8 +44,10 @@
     [_list removeAllItems];
     NSLog(@"all dropdown items removed");
     
-    NSMutableArray *drives = drivedetect();
-    for (NSURL *url in drives){
+    Instance *sharedInstance = [Instance sharedInstance];
+    refreshDrive();
+    
+    for (NSURL *url in sharedInstance.volumes){
         NSString *volumeName;
         NSError *error;
         [url getResourceValue:&volumeName forKey:NSURLVolumeNameKey error:&error];

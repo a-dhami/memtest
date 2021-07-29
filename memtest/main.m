@@ -6,6 +6,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "instance.h"
 #import "drivedetect.h"
 
 
@@ -13,7 +14,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {}
     
-   
+    Instance *sharedInstance = [Instance sharedInstance];   
 
     //TODO
     //1.External Drive Detection (Total Space, Free Space, Format)

@@ -7,17 +7,18 @@
 
 #import <Foundation/Foundation.h>
 #import "instance.h"
+#import "drivedetect.h"
 
 @implementation Instance
 
-static Instance * instance = nil;
+static Instance *sharedInstance = nil;
 
 +(Instance*)sharedInstance{
     @synchronized([Instance class]) {
-        if (!instance){
-            instance = [[self alloc] init];
+        if (!sharedInstance){
+            sharedInstance = [[self alloc] init];
         }
-        return instance;
+        return sharedInstance;
     }
     return nil;
 }
@@ -25,9 +26,9 @@ static Instance * instance = nil;
 +(id)alloc {
     @synchronized([Instance class])
     {
-        NSAssert(instance == nil, @"Singleton already initialized.");
-        instance = [super alloc];
-        return instance;
+        NSAssert(sharedInstance == nil, @"Singleton already initialized.");
+        sharedInstance = [super alloc];
+        return sharedInstance;
     }
     return nil;
 }
@@ -37,7 +38,15 @@ static Instance * instance = nil;
     if (self != nil) {
         
         //TODO: Initialize Variables in here for the instance.
+        self.fileSize = 1024576;
+        self.volumes = drivedetect();
+        
     }   return self;
+}
+
+void refreshDrive(void){
+    //refreshing the drives
+    sharedInstance.volumes = drivedetect();
 }
 
 @end

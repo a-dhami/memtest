@@ -12,11 +12,13 @@
 #import <Foundation/Foundation.h>
 
 @interface Instance : NSObject
-
 @property (nonatomic) int fileSize;
 @property (nonatomic, strong) NSMutableArray *volumes;
 
 +(Instance *) sharedInstance;
+
+void refreshDrive(void);
+
 
 @end
 
