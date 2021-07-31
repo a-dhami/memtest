@@ -39,6 +39,7 @@ static Instance *sharedInstance = nil;
         
         //TODO: Initialize Variables in here for the instance.
         self.fileSize = 1024576;
+        self.selectedVolume = -1;
         self.volumes = drivedetect();
         
     }   return self;
@@ -47,6 +48,7 @@ static Instance *sharedInstance = nil;
 void refreshDrive(void){
     //refreshing the drives
     sharedInstance.volumes = drivedetect();
+    sharedInstance.selectedVolume = -1;
 }
 
 @end

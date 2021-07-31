@@ -14,6 +14,7 @@
 @interface Instance : NSObject
 @property (nonatomic) int fileSize;
 @property (nonatomic, strong) NSMutableArray *volumes;
+@property (nonatomic) int selectedVolume;
 
 +(Instance *) sharedInstance;
 

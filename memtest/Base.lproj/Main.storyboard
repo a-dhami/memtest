@@ -116,8 +116,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="225"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4s3-u1-snm">
-                                <rect key="frame" x="18" y="99" width="173" height="16"/>
+                            <textField identifier="lblFlashMemoryTester" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4s3-u1-snm" userLabel="lblFMT">
+                                <rect key="frame" x="18" y="20" width="173" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Flash Memory Tester" id="4cX-gc-Rfi">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -125,7 +125,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-7n-WaE">
+                            <textField identifier="lblRemovableDisk" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-7n-WaE" userLabel="lblRemovableDisk">
                                 <rect key="frame" x="18" y="189" width="108" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Removable Disk: " id="2Sl-kD-pf4">
@@ -134,7 +134,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <popUpButton identifier="diskDropdown" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-4b-WtJ">
+                            <popUpButton identifier="diskDropdown" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-4b-WtJ" userLabel="ddDiskDropdown">
                                 <rect key="frame" x="232" y="181" width="232" height="25"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="ZMZ-Kq-GhJ">
@@ -146,8 +146,8 @@
                                     <action selector="updateDropDown:" target="XfG-lQ-9wD" id="4du-IU-yKR"/>
                                 </connections>
                             </popUpButton>
-                            <button identifier="refreshButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lia-ty-z3l">
-                                <rect key="frame" x="386" y="136" width="81" height="32"/>
+                            <button identifier="refreshButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lia-ty-z3l" userLabel="btnRefresh">
+                                <rect key="frame" x="386" y="51" width="81" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fgQ-ia-Qd2">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -157,12 +157,74 @@
                                     <action selector="refresh:" target="XfG-lQ-9wD" id="Sco-Oz-c8T"/>
                                 </connections>
                             </button>
+                            <textField identifier="lblDiskName" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-ri-hWX" userLabel="lblDiskName">
+                                <rect key="frame" x="18" y="140" width="77" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Disk Name: " id="Vqa-w5-x7h">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField identifier="lblTotalSize" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXl-HK-CzU" userLabel="lblTotalSize">
+                                <rect key="frame" x="18" y="116" width="67" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Total Size:" id="xL5-6e-HFP">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField identifier="lblFreeSpace" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ssc-xS-q1Z" userLabel="lblFreeSpace">
+                                <rect key="frame" x="18" y="92" width="143" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Free Space Remaining:" id="YMl-qV-XAs">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField identifier="txtfreeSpace" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="176" translatesAutoresizingMaskIntoConstraints="NO" id="Ekr-IF-mNb" userLabel="txtFreeSpace">
+                                <rect key="frame" x="282" y="92" width="180" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" placeholderString="sample text" id="BsB-FQ-ldb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField identifier="txtdiskName" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="176" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-Kg-zJ7" userLabel="txtDiskName">
+                                <rect key="frame" x="282" y="140" width="180" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <textFieldCell key="cell" alignment="right" placeholderString="sample text" id="tAk-Fl-90n">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField identifier="txttotalSize" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" preferredMaxLayoutWidth="176" translatesAutoresizingMaskIntoConstraints="NO" id="IvQ-yf-TMb" userLabel="txtTotalSize">
+                                <rect key="frame" x="282" y="116" width="180" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" placeholderString="sample text" id="Aat-oG-K8y">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="DiskNameTxt" destination="8ga-Kg-zJ7" id="Z2B-2d-29w"/>
                         <outlet property="diskDropdown" destination="2Vz-4b-WtJ" id="9H8-6l-R9e"/>
+                        <outlet property="diskName" destination="8ga-Kg-zJ7" id="tVG-TM-LM2"/>
+                        <outlet property="freeSpace" destination="Ekr-IF-mNb" id="Oy0-Ma-wMU"/>
                         <outlet property="list" destination="ZMZ-Kq-GhJ" id="aRI-RI-OAM"/>
                         <outlet property="popupSelection" destination="2Vz-4b-WtJ" id="vZs-6M-Lsq"/>
+                        <outlet property="totalSize" destination="IvQ-yf-TMb" id="WQd-Ft-I14"/>
+                        <outlet property="txtDiskName" destination="8ga-Kg-zJ7" id="6PJ-zP-4KH"/>
+                        <outlet property="txtFreeSpace" destination="Ekr-IF-mNb" id="0tS-9R-9vB"/>
+                        <outlet property="txtTotalSize" destination="IvQ-yf-TMb" id="QOc-Gq-rii"/>
+                        <outlet property="txtTotalSpace" destination="IvQ-yf-TMb" id="XGN-sS-kQe"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
