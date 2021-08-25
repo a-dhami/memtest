@@ -18,6 +18,8 @@
 		F29011D426B0C3BF001AE23B /* instance.m in Sources */ = {isa = PBXBuildFile; fileRef = F29011D326B0C3BF001AE23B /* instance.m */; };
 		F2A6CE5F26A8A8F30028BF43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2A6CE5E26A8A8F30028BF43 /* .gitignore */; };
 		F2A6CE6126A8A9060028BF43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2A6CE6026A8A9060028BF43 /* .gitignore */; };
+		F2D740B126B4DD6500BE945E /* writer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D740B026B4DD6500BE945E /* writer.m */; };
+		F2EF5D1126D6DF9D00C0B6AD /* deleter.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EF5D1026D6DF9D00C0B6AD /* deleter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		F2A6CE5D26A7E1E70028BF43 /* drivedetect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drivedetect.h; sourceTree = "<group>"; };
 		F2A6CE5E26A8A8F30028BF43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F2A6CE6026A8A9060028BF43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F2D740B026B4DD6500BE945E /* writer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = writer.m; sourceTree = "<group>"; };
+		F2D740B226B4DD7200BE945E /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		F2EF5D0F26D6DF8B00C0B6AD /* deleter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deleter.h; sourceTree = "<group>"; };
+		F2EF5D1026D6DF9D00C0B6AD /* deleter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = deleter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,10 @@
 				F22EAF6226A775AB00EF682C /* memtest.entitlements */,
 				F22EAF8626A7DAD400EF682C /* drivedetect.m */,
 				F2A6CE5D26A7E1E70028BF43 /* drivedetect.h */,
+				F2D740B026B4DD6500BE945E /* writer.m */,
+				F2D740B226B4DD7200BE945E /* writer.h */,
+				F2EF5D1026D6DF9D00C0B6AD /* deleter.m */,
+				F2EF5D0F26D6DF8B00C0B6AD /* deleter.h */,
 			);
 			path = memtest;
 			sourceTree = "<group>";
@@ -277,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D740B126B4DD6500BE945E /* writer.m in Sources */,
 				F22EAF5926A775A900EF682C /* ViewController.m in Sources */,
 				F22EAF6126A775AB00EF682C /* main.m in Sources */,
+				F2EF5D1126D6DF9D00C0B6AD /* deleter.m in Sources */,
 				F22EAF5626A775A900EF682C /* AppDelegate.m in Sources */,
 				F22EAF8726A7DAD400EF682C /* drivedetect.m in Sources */,
 				F29011D426B0C3BF001AE23B /* instance.m in Sources */,

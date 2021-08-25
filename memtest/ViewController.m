@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "instance.h"
 #import "drivedetect.h"
+#import "deleter.h"
 
 
 @implementation ViewController;
@@ -28,9 +29,14 @@
     NSInteger numOfDrives = [_list numberOfItems];
     if(numOfDrives == 0){
         [_list addItemWithTitle:@"No Removable Disks Detected"];
+        [_txtDiskName setStringValue:@"No Volume Selected"];
+        [_txtTotalSize setStringValue:@"No Volume Selected"];
+        [_txtFreeSpace setStringValue:@"No Volume Selected"];
     }
     else{
         sharedInstance.selectedVolume = 0;
+        NSLog(@"Item Index Auto-Selected %i", sharedInstance.selectedVolume);
+
         
         //update labels to show disk name, size, free space
         NSURL *url = [sharedInstance.volumes firstObject];
@@ -62,6 +68,10 @@
     // Update the view, if already loaded.
 }
 
+- (IBAction)testButton:(id)sender {
+    deleter();
+}
+
 - (IBAction)refresh:(id)sender {
     
     //remove existing drives from popupbutton
@@ -84,9 +94,13 @@
     NSInteger numOfDrives = [_list numberOfItems];
     if(numOfDrives == 0){
         [_list addItemWithTitle:@"No Removable Disks Detected"];
+        
+        [_txtDiskName setStringValue:@"No Volume Selected"];
+        [_txtTotalSize setStringValue:@"No Volume Selected"];
+        [_txtFreeSpace setStringValue:@"No Volume Selected"];
     }
     else{
-        NSLog(@"volumes found: setting selectedVolume to 1");
+        NSLog(@"volumes found: setting selectedVolume to 0");
         sharedInstance.selectedVolume = 0;
         
         //update labels to show disk name, size, free space
@@ -139,7 +153,5 @@
     
 }
 
-- (IBAction)testButton:(id)sender {
-}
 
 @end
